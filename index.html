@@ -139,7 +139,7 @@
 
             <span class="author-block"><sup>✉</sup>Corresponding Authors.</span> -->
 
-          </div>
+          <!-- </div> -->
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
@@ -172,12 +172,12 @@
                 </a>
               </span> -->
               
-              <style>
+              <!-- <style>
                 .link-block {
                   display: block;
                   margin-bottom: 10px;
                 }
-              </style>
+              </style> -->
               <!-- Code Link. -->
               <span class="link-block">
                 <a href="https://github.com/hustvl/VAD"
@@ -323,9 +323,9 @@
 
 </div>
 
-<!-- <section class="section">
+<section class="section">
   <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
@@ -335,34 +335,23 @@
         </div>
       </div>
 
-    </div>
+    </div> -->
 
-    <img src="./static/images/teaserfig.png"
+    <!-- <img src="./static/images/teaserfig.png"
     class="interpolation-image"
     alt="Interpolation end reference image."/>
     <p>
       Our method achieves real-time rendering for dynamic scenes at high image resolutions while maintaining high rendering quality. The right figure is mainly tested on synthetic datasets, where the radius of the dot corresponds to the training time. "Res": resolution.
-    </p>
-    <img src="./static/images/pipeline_00.jpg"
+    </p> -->
+    <h2 class="title is-3">Framework</h2>
+    <img src="./static/images/framework_00.png"
     class="interpolation-image"
     alt="Interpolation end reference image."/>
     <p>
-      The overall pipeline of our model. Given a group of 3D Gaussians S, we extract the center of each 3D Gaussian X and timestamp t to compute the features by a spatial-temporal structure encoder. Then a multi-head Gaussian deformation decoder is used to decode the feature and get S` of each Gaussian at timestamp t.    </p> -->
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Paper video. -->
-  <!-- </div>
-</section> -->
+      Overall architecture of VADv2. The full pipeline of VAD is divided into four phases. Backbone includes an image feature extractor and a BEV encoder to project the image features to the BEV features. Vectorized Scene Learning aims to encode the scene information into agent queries and map queries, as well as represent the scene with motion vectors and map vectors. In the inferring phase of planning, VAD utilizes an ego query to extract map and agent information via query interaction and outputs the planning trajectory (represented as ego vector). The proposed vectorized planning constraints regularize the planning trajectory in the training phase.    
+    </p>
+  </div>
+</section>
 
 
 
