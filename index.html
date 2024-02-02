@@ -200,50 +200,57 @@
   </div>
 </section>
 
+
 <div class="container is-max-desktop">
   <div class="columns is-centered">
-    <!-- <p>
-      As a byproduct of our method, we can also solve the matting problem by ignoring
-      samples that fall outside of a bounding box during rendering.
-    </p> -->
-    <!-- Visual Effects. -->
-    <div class="column">
+
+    <!-- <div class="column is-half">
       <div class="content">
-        <!-- <h2 class="title is-3">Visual Effects</h2> -->
-  
         <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-          <source src="./static/videos/teaser_chicken.mp4"
-                  type="video/mp4">
+          <source src="./static/videos/teaser_chicken.mp4" type="video/mp4">
         </video>
       </div>
-    </div>
-    <div class="column">
-      <div class="columns is-centered">
-        <div class="column content">
-  
-          <video id="matting-video"  autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/teaser_beef.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-  
-      </div>
-    </div>
-    <div class="column">
-      <div class="columns is-centered">
-        <div class="column content">
-  
-          <video id="matting-video"  autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/teaser_cookie.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-  
-      </div>
-    </div>
-  </div>
+    </div> -->
 
+    <div class="column is-half">
+      <div class="columns is-centered">
+        <div class="column content">
+          <video id="matting-video-1" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/vis_v2_064102_noppp1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column content">
+          <video id="matting-video-2" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/vis_v2_064102_noppp2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeat the above structure for the next two rows -->
+
+    <!-- Row 2 -->
+    <div class="column is-half">
+      <div class="columns is-centered">
+        <div class="column content">
+          <video id="video-3" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/vis_v2_064102_noppp3.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column content">
+          <video id="video-4" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/vis_v2_064102_noppp4.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 3 -->
+    <!-- Continue the pattern for the remaining rows -->
+
+  </div>
 </div>
+
 
 <!-- <h2 class="subtitle has-text-centered">
   <span class="dnerf">4D-GS</span> can learn a dynamic scene within 20 minutes and reach the rendering speed over 50 fps of the view on one RTX 3080 GPU.
