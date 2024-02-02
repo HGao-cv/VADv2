@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="VAD V2: LLM-like End-to-End Probabilistic Planning">
+        content="VAD V2: GPT-like End-to-End Probabilistic Planning">
   <meta name="keywords" content="Gaussians, Dynamic, Rendering, Splatting">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>VAD V2: LLM-like End-to-End Probabilistic Planning</title>
+  <title>VAD V2: GPT-like End-to-End Probabilistic Planning</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -96,7 +96,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">VAD v2: LLM-like End-to-End  </h1>
+          <h1 class="title is-1 publication-title">VAD v2: GPT-like End-to-End  </h1>
           <h1 class="title is-1 publication-title">Probabilistic Planning</h1>
 
           <!-- <div class="is-size-5 publication-authors">
@@ -108,7 +108,6 @@
               <a href="https://jaminfong.cn">Jiemin Fang</a><sup>2‡</sup>,
             </span>
             
-
             <span class="author-block">
               <a href="http://lingxixie.com/">Lingxi Xie</a><sup>2</sup>,
             </span>
@@ -345,7 +344,7 @@
     class="interpolation-image"
     alt="Interpolation end reference image."/>
     <p>
-      Overall architecture of VADv2. The full pipeline of VAD is divided into four phases. Backbone includes an image feature extractor and a BEV encoder to project the image features to the BEV features. Vectorized Scene Learning aims to encode the scene information into agent queries and map queries, as well as represent the scene with motion vectors and map vectors. In the inferring phase of planning, VAD utilizes an ego query to extract map and agent information via query interaction and outputs the planning trajectory (represented as ego vector). The proposed vectorized planning constraints regularize the planning trajectory in the training phase.    
+      Like GPT, VADv2 learns the probabilistic distribution of action from mass of driving demonstrations, and autoregressively samples one action to control the vehicle.  VADv2 is trained on Town03, Town04, Town06, Town07, and Town10, and evaluated on unseen Town05. It runs stably in a fully end-to-end manner, even w/o rule-based wrapper.    
     </p>
   </div>
 </section>
