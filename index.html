@@ -4,10 +4,10 @@
 
   <meta charset="utf-8">
   <meta name="description"
-        content="VAD v2: GPT-like End-to-End Probabilistic Planning">
+        content="VADv2: End-to-End Vectorized Autonomous Driving via Probabilistic Planning">
   <meta name="keywords" content="Gaussians, Dynamic, Rendering, Splatting">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>VAD v2: GPT-like End-to-End Probabilistic Planning</title>
+  <title>VADv2: End-to-End Vectorized Autonomous Driving via Probabilistic Planning</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -97,8 +97,8 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">VAD v2: GPT-like End-to-End  </h1>
-          <h1 class="title is-1 publication-title">Probabilistic Planning</h1>
+          <h1 class="title is-1 publication-title">VADv2: End-to-End Vectorized Autonomous Driving  </h1>
+          <h1 class="title is-1 publication-title">via Probabilistic Planning</h1>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block">
@@ -336,7 +336,7 @@
     class="interpolation-image"
     alt="Interpolation end reference image."/>
     <p>
-      Like GPT, VAD v2 learns the probabilistic distribution of action from mass of driving demonstrations, and samples one action at each time step to control the vehicle.  VAD v2 is trained on Town03, Town04, Town06, Town07, and Town10, and evaluated on unseen Town05. It runs stably in a fully end-to-end manner, even w/o rule-based wrapper.    
+      VADv2 takes multi-view image sequence as input in a streaming manner, transforms sensor data into environmental token embeddings, outputs the probabilistic distribution of action in the following time horizon, and samples one action to control the vehicle. The probabilistic distribution of action is learned from large-scale driving demonstrations. VADv2 is trained on Town03, Town04, Town06, Town07, and Town10, and evaluated on unseen Town05. It runs stably in a fully end-to-end manner, even w/o rule-based wrapper.
     </p>
   </div>
 </section>
